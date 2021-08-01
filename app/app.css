@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --celeste : hsl(185, 75%, 39%);
+    --azul : hsl(229, 23%, 23%);
+    --plomo : hsl(227, 10%, 46%);
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--celeste);
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: -350px -500px , 700px 300px;
+}
+
+
+.card{
+    width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 0px 8px #0002;
+    background: #fff;
+}
+
+.card-fondo img{
+    vertical-align: middle;
+}
+
+
+.victor{
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+    top: -100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.card-texto{
+    padding-top: 70px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.nombre{
+    text-align: center;
+    color: var(--azul);
+    font-weight: 700;
+}
+.lugar{
+    text-align: center;
+    margin-top: 5px;
+    color: var(--plomo);
+}
+.edad{
+    font-weight: 400;
+    color: var(--plomo);
+
+}
+
+
+.influencer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+}
+
+.influencer .numero{
+    text-align: center;
+    margin-bottom: 5px;
+    color: var(--azul)
+}
+
+.influencer .visitas{
+    text-align: center;
+    font-size: 13px;
+    color: var(--plomo);
+}
